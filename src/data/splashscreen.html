@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      body,
+      html {
+        height: 100%;
+        margin: 0;
+      }
+      .bg {
+        /* The image used */
+        background-image: url("img/loader.svg");
+
+        /* Full height */
+        height: 100%;
+
+        /* Center and scale the image nicely */
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+
+      .component-text {
+        position: absolute;
+        width: 275px;
+        height: 129px;
+        left: 33px;
+        top: 35px;
+      }
+
+      .text-pemb {
+        position: absolute;
+        left: 0%;
+        right: 25.71%;
+        top: 0%;
+        bottom: 88.37%;
+
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 15px;
+        /* identical to box height, or 94% */
+
+        color: #ffffff;
+
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 1);
+      }
+
+      .text-title {
+        /* Keperawatan */
+
+        position: absolute;
+        left: 0%;
+        right: 0%;
+        top: 24.03%;
+        bottom: 64.34%;
+
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 35px;
+        line-height: 15px;
+        /* identical to box height, or 43% */
+
+        color: #ffffff;
+
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+      }
+      .text-offline {
+        /* Offline Access */
+
+        position: absolute;
+        left: 0%;
+        right: 53.06%;
+        top: 48.06%;
+        bottom: 40.31%;
+
+        font-family: Montserrat;
+        font-style: italic;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 15px;
+        /* identical to box height, or 94% */
+
+        color: #ffffff;
+
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+      }
+      .text-detail {
+        /* Copyright © 2018 - PT Sahabat Alter Indonesia and its Licenced. All right reserved. Application Build Edition V.2.0.0 */
+
+        position: absolute;
+        left: 0%;
+        right: 11.43%;
+        top: 72.87%;
+        bottom: 0%;
+
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 9px;
+        line-height: 15px;
+        /* or 167% */
+
+        color: #ffffff;
+
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+      }
+
+      .loader {
+        width: 370px;
+        height: 3px;
+        left: 35px;
+        top: 241.63px;
+        margin: 0 auto;
+        border-radius: 10px;
+        border: 4px solid transparent;
+        position: absolute;
+        background-color: white;
+        padding: 1px;
+      }
+      .loader:before {
+        content: "";
+        border: 1px solid #fff;
+        border-radius: 10px;
+        position: absolute;
+        top: -4px;
+        right: -4px;
+        bottom: -4px;
+        left: -4px;
+      }
+      .loader .loaderBar {
+        position: absolute;
+        border-radius: 10px;
+        top: 0;
+        right: 100%;
+        bottom: 0;
+        left: 0;
+        background: #2c0bfd;
+        width: 0;
+        animation: borealisBar 2s linear infinite;
+      }
+
+      @keyframes borealisBar {
+        0% {
+          left: 0%;
+          right: 100%;
+          width: 0%;
+        }
+        10% {
+          left: 0%;
+          right: 75%;
+          width: 25%;
+        }
+        90% {
+          right: 0%;
+          left: 75%;
+          width: 25%;
+        }
+        100% {
+          left: 100%;
+          right: 0%;
+          width: 0%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="bg"></div>
+    <div class="component-text">
+      <span class="text-pemb">Aplikasi Pembelajaran</span>
+      <span class="text-title">Keperawatan</span>
+      <span class="text-offline"><i>Offline Access</i></span>
+      <span class="text-detail"
+        >Copyright © 2018 -
+        <script>
+          document.write(new Date().getFullYear());
+        </script>
+        PT Sahabat Alter Indonesia <br />
+        and its Licenced. All right reserved.<br />
+        Application Build Edition V.2.0.0</span
+      >
+    </div>
+
+    <div class="loader">
+      <div class="loaderBar"></div>
+    </div>
+  </body>
+</html>

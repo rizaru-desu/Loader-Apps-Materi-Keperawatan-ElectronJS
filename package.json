@@ -1,0 +1,34 @@
+{
+  "name": "loadaer-apps",
+  "version": "1.0.0",
+  "description": "Aplication Materi Keperawatan",
+  "main": "src/main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron .",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^11.2.0",
+    "electron-builder": "^22.10.5"
+  },
+  "dependencies": {
+    "hwid": "^0.3.0"
+  },
+  "build": {
+    "productName": "PVM Player",
+    "appId": "scripter.PVMplayer",
+    "win": {
+      "target": [
+        "portable"
+      ]
+    },
+    "portable": {
+      "artifactName": "pvmplayer_portable.exe"
+    }
+  }
+}

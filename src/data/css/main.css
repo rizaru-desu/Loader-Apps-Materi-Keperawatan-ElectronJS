@@ -1,0 +1,192 @@
+/*SPLASH SCREEN*/
+.imgLoader {
+  /* loader 1 */
+  position: absolute;
+  width: 599px;
+  height: 355px;
+  left: 0px;
+  top: 0px;
+}
+
+.progress {
+  position: absolute;
+  margin-bottom: 2rem;
+  width: 490px;
+  height: 8px;
+  left: 52px;
+  top: 304px;
+  background: #eaeaea;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: stretch;
+  justify-content: flex-start;
+  border-radius: 4px;
+}
+.progress:before {
+  content: " ";
+  display: block;
+  position: absolute;
+  width: var(--width, 25%);
+  height: 100%;
+  background: #1a1de2;
+}
+.progress.progress--indeterminate:before {
+  animation: 2s progressIndeterminate infinite;
+}
+@-moz-keyframes progressIndeterminate {
+  from {
+    width: 0;
+    margin-left: 0;
+    margin-right: 100%;
+  }
+  50% {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  to {
+    width: 0;
+    margin-left: 100%;
+    margin-right: 0;
+  }
+}
+@-webkit-keyframes progressIndeterminate {
+  from {
+    width: 0;
+    margin-left: 0;
+    margin-right: 100%;
+  }
+  50% {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  to {
+    width: 0;
+    margin-left: 100%;
+    margin-right: 0;
+  }
+}
+@-o-keyframes progressIndeterminate {
+  from {
+    width: 0;
+    margin-left: 0;
+    margin-right: 100%;
+  }
+  50% {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  to {
+    width: 0;
+    margin-left: 100%;
+    margin-right: 0;
+  }
+}
+@keyframes progressIndeterminate {
+  from {
+    width: 0;
+    margin-left: 0;
+    margin-right: 100%;
+  }
+  50% {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  to {
+    width: 0;
+    margin-left: 100%;
+    margin-right: 0;
+  }
+}
+
+/*MENU*/
+.imgMenu {
+  position: absolute;
+  width: 1013px;
+  height: 570px;
+  left: 0px;
+  top: 0px;
+  background-image: url("../img/background.jpg");
+  background-repeat: no-repeat;
+  background-size: 1013px 570px;
+  -webkit-app-region: no-drag;
+  z-index: -100;
+}
+
+.btnClose {
+  position: absolute;
+  width: 21px;
+  height: 21px;
+  left: 985px;
+  top: 6px;
+  background: #ffffff;
+  border-radius: 2px;
+  cursor: pointer;
+  -webkit-app-region: no-drag;
+}
+
+.btnMinimaze {
+  position: absolute;
+  width: 21px;
+  height: 21px;
+  left: 6px;
+  top: 6px;
+  background: #ffffff;
+  border-radius: 2px;
+  cursor: pointer;
+  -webkit-app-region: no-drag;
+}
+
+/*FRAME FOOTER*/
+.footerFrame {
+  /* Rectangle 4 */
+  position: absolute;
+  width: 529.87px;
+  height: 25.85px;
+  left: 242px;
+  top: 544.15px;
+  align-content: space-around;
+  background: #ffffff;
+  box-shadow: 0 0 5px 4px rgba(148, 210, 195, 0.75);
+  border-radius: 13px 13px 0px 0px;
+  -webkit-app-region: no-drag;
+}
+
+.footerLogo {
+  /* Rectangle 5 */
+  position: absolute;
+  width: 387px;
+  height: 76px;
+  left: 314px;
+  top: 494px;
+  text-align: center;
+  background: #ffffff;
+  border-radius: 20px 20px 0px 0px;
+  z-index: -2;
+}
+
+.imgLogo {
+  margin: 5px;
+}
+
+.btnPerbaruan {
+  width: 10px;
+  background-color: red;
+  cursor: pointer;
+}
+
+.btnPenyusun {
+  width: 10px;
+  background-color: red;
+  cursor: pointer;
+}
+
+.btnPerbaruan {
+}
+
+.btnBantuan {
+}

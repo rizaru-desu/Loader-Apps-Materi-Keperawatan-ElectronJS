@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>menu</title>
+    <style>
+      body,
+      html {
+        height: 100%;
+        margin: 0;
+      }
+
+      .bg {
+        /* The image used */
+        background-image: url("img/bg.jpg");
+
+        /* Full height */
+        height: 100%;
+
+        /* Center and scale the image nicely */
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        -webkit-app-region: drag;
+      }
+
+      /*=== Button Toolbar ===*/
+
+      .btnMinimaze {
+        position: absolute;
+        width: 19px;
+        height: 19px;
+        left: 1px;
+        top: 1px;
+        -webkit-app-region: no-drag;
+        cursor: pointer;
+      }
+
+      .btnClose {
+        position: absolute;
+        width: 19px;
+        height: 19px;
+        left: 1004px;
+        top: 1px;
+        -webkit-app-region: no-drag;
+        cursor: pointer;
+      }
+      /*=== End ===*/
+
+      /*=== Footer ===*/
+      .footer {
+        position: absolute;
+        width: 638px;
+        height: 80px;
+        left: 184px;
+        top: 496px;
+      }
+      .menu {
+        position: absolute;
+        left: 0%;
+        right: 0%;
+        top: 56.25%;
+        bottom: 0%;
+
+        background: #ffffff;
+        border-radius: 20px 20px 0px 0px;
+      }
+      .banner {
+        position: absolute;
+        left: 21%;
+        right: 20.85%;
+        top: 0%;
+        bottom: 43.75%;
+
+        background: #ffffff;
+        border-radius: 20px 20px 0px 0px;
+      }
+
+      .logo-alter {
+        position: absolute;
+        left: 25.71%;
+        right: 57.99%;
+        top: 3.75%;
+        bottom: 46.25%;
+      }
+
+      .logo-keperawatan {
+        position: absolute;
+        left: 44.67%;
+        right: 22.73%;
+        top: 7.5%;
+        bottom: 51.25%;
+      }
+      /*=== End ===*/
+
+      /*=== Button Footer ===*/
+      .btnPembaruan {
+        position: absolute;
+        width: 98px;
+        height: 18px;
+        left: 10px;
+        top: 54px;
+        cursor: pointer;
+        -webkit-app-region: no-drag;
+      }
+
+      .btnTim {
+        position: absolute;
+        width: 114px;
+        height: 21px;
+        left: 140px;
+        top: 52px;
+        cursor: pointer;
+        -webkit-app-region: no-drag;
+      }
+
+      .btnBantuan {
+        position: absolute;
+        width: 79px;
+        height: 18px;
+        left: 286px;
+        top: 54px;
+        cursor: pointer;
+        -webkit-app-region: no-drag;
+      }
+
+      .btnTips {
+        position: absolute;
+        width: 97px;
+        height: 23.79px;
+        left: 397px;
+        top: 51px;
+        cursor: pointer;
+        -webkit-app-region: no-drag;
+      }
+
+      .btnWeb {
+        position: absolute;
+        width: 99px;
+        height: 16.97px;
+        left: 526px;
+        top: 54px;
+        cursor: pointer;
+        -webkit-app-region: no-drag;
+      }
+      /*=== End ===*/
+    </style>
+  </head>
+  <body>
+    <div class="bg"></div>
+    <a id="Minimaze" class="btnMinimaze">
+      <svg
+        width="19"
+        height="19"
+        viewBox="0 0 19 19"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <rect width="19" height="19" rx="5" fill="#56CCF2" />
+        <rect x="3" y="15" width="13" height="2" fill="white" />
+      </svg>
+    </a>
+    <a id="Close" class="btnClose">
+      <svg
+        width="19"
+        height="19"
+        viewBox="0 0 19 19"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <rect width="19" height="19" rx="5" fill="#EB5757" />
+        <rect
+          x="4.19672"
+          y="13.8891"
+          width="13"
+          height="2"
+          transform="rotate(-45 4.19672 13.8891)"
+          fill="white"
+        />
+        <rect
+          x="5.6109"
+          y="4.69672"
+          width="13"
+          height="2"
+          transform="rotate(45 5.6109 4.69672)"
+          fill="white"
+        />
+      </svg>
+    </a>
+
+    <div class="footer">
+      <div class="banner"></div>
+      <div class="menu"></div>
+      <div class="logo-alter"><img src="img/logo-alter.svg" /></div>
+      <div class="logo-keperawatan"><img src="img/title.svg" /></div>
+      <a class="btnPembaruan"><img src="img/pembaruan.svg" /></a>
+      <a class="btnTim"><img src="img/tim-penyusun.svg" /></a>
+      <a class="btnBantuan"><img src="img/pembaruan.svg" /></a>
+      <a class="btnTips"><img src="img/Tips.svg" /></a>
+      <a class="btnWeb"><img src="img/website.svg" /></a>
+    </div>
+
+    <script src="js/menu.js"></script>
+  </body>
+</html>
